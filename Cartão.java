@@ -13,24 +13,32 @@ public class Cartao{
   public void setSenha(String senha) {
     this.senha = senha;
   }
+
+  public boolean alterarSenha(String senhaAntiga, String senhaNova){
+    if(senhaAntiga == senha){
+      senha = senhaNova;
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   
-  public double getSaldo(String senha) {
+  public boolean getSaldo(String senha) {
      if (this.senha == senha) {
        return conta.getSaldo();
      }
       else {
-        return null;
+        System.out.printf("> Senha incorreta.\n");
+        return false;
       }
     }
   
-  
-  public boolean sacar(double valor) {
-    if (saldo >= valor && saldo > 0) {
-      saldo -= valor;
-      System.out.printf("> Saque concluído.\n");
-      return true;
+  public boolean sacar(double valor, String senha) {
+    if (this.senha == senha) {
+      return conta.sacar(valor);
     } else {
-      System.out.printf("> Valor inválido. Digite um valor maior ou igual ao saldo em sua conta.\n");
+      System.out.printf("> Senha incorreta.\n");
       return false;
     }
   }
