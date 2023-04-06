@@ -1,6 +1,5 @@
 class Cliente {
 
-  Conta conta = new Conta();
   private String nome;
   private String cpf;
   private String endereco;
