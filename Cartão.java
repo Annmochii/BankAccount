@@ -9,7 +9,24 @@ Devera conter um método retirada e um método saldo, semelhante à classe conta
 public class Cartao{
 
   private String senha;
+  private Conta[] contas;
 
+  public Cartao(String senha){
+    this.contas = new Conta[3];
+    this.senha = setSenha;
+  }
+
+  public boolean adicionarConta(Conta conta){
+    if (this.contas.length < 3 && conta.getCliente() == this.contas.getClientes()) {
+      for (i=0 ; i < 3; i++){
+        this.contas[i] = conta;
+      }
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
   public void setSenha(String senha) {
     this.senha = senha;
   }
@@ -22,7 +39,6 @@ public class Cartao{
       return false;
     }
   }
-
   
   public boolean getSaldo(String senha) {
      if (this.senha == senha) {
