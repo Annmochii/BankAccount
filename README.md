@@ -3,7 +3,7 @@ This is a simple Java program that simulates a bank account. It allows the user 
 
 ## Getting Started  
 ### Prerequisites  
-To run this program, you will need to have Java installed on your computer. You can download the latest version of Java from the official website: https://www.java.com/en/download/  
+To run this program, you will need to have Java installed on your computer. You can download the latest version of Java from the official website:   https://www.java.com/en/download/  
 
 ### Installation
 To use this program, you can either download the source code from this repository or clone the repository to your local machine using Git.  
