@@ -17,7 +17,7 @@ Replace "your-username" with your GitHub username.
 ### Usage  
 To run the program, navigate to the directory where the program files are located and run the following command:  
 
-` java BankAccount `
+` java BankAccount `  
 This will launch the program and display a menu of options. Follow the prompts to create an account, make deposits or withdrawals, transfer funds, or view your balance.  
 
 To create a card with a password, you will need to create an account first. Then, select the option to create a card and follow the prompts to enter your password. You can use this password to access up to three accounts associated with the same customer.  
